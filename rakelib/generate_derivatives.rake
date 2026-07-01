@@ -21,9 +21,9 @@ def process_and_optimize_image(filename, file_type, output_filename, size, densi
   else
     puts "Creating: #{output_filename}"
     begin
+      magick = MiniMagick::Tool::Magick.new
       if file_type == :pdf
         inputfile = "#{filename}[0]"
-        magick = MiniMagick.convert
         magick.density(density)
         magick << inputfile
         magick.resize(size)
@@ -31,7 +31,6 @@ def process_and_optimize_image(filename, file_type, output_filename, size, densi
         magick << output_filename
         magick.call
       else
-        magick = MiniMagick.convert
         magick << filename
         magick.resize(size)
         magick.flatten

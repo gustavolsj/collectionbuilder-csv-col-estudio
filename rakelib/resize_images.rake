@@ -11,12 +11,12 @@ def process_image(filename, output_filename, size)
   puts "Creating: #{output_filename}"
   begin
     # use mini_magick to call ImageMagick
-    MiniMagick.convert do |convert|
-      convert << filename
-      convert.resize(size)
-      convert.flatten
-      convert << output_filename
-    end
+    magick = MiniMagick::Tool::Magick.new
+    magick << filename
+    magick.resize(size)
+    magick.flatten
+    magick << output_filename
+    magick.call
   rescue StandardError => e
     puts "Error creating #{filename}: #{e.message}"
   end
