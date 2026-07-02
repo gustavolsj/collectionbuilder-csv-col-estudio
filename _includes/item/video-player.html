@@ -1,12 +1,20 @@
-{% comment %}
-
-    Adds html video element with source given in object_location.
-    Sizing is controlled using Bootstrap "ratio" styles.
-
-{%- endcomment -%}
+{% comment %} Adds html video element with source given in object_location.
+Sizing is controlled using Bootstrap "ratio" styles. {%- endcomment -%}
 <div class="ratio ratio-16x9">
-    <video {% if page.image_small %}poster="{{ page.image_small | relative_url }}" {% endif %}preload="metadata" controls>
-        <source src="{{ page.object_location | relative_url }}">
-        Your browser does not support the video tag. Please <a href="{{ page.object_location | relative_url }}">download the video file</a>.
-    </video>
+  <video
+    {%
+    if
+    page.image_small
+    %}poster="{{ page.image_small | relative_url }}"
+    {%
+    endif
+    %}preload="metadata"
+    controls
+  >
+    <source src="{{ page.object_location | relative_url }}" />
+    Tu navegador no admite la etiqueta de video. Por favor,
+    <a href="{{ page.object_location | relative_url }}"
+      >descarga el archivo de video</a
+    >.
+  </video>
 </div>

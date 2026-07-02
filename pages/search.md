@@ -1,7 +1,7 @@
 ---
-title: Site Search
+title: Búsqueda del sitio
 layout: search
 permalink: /search/
 ---
 
-## Search Collection Metadata
+## Buscar en los metadatos de la colección

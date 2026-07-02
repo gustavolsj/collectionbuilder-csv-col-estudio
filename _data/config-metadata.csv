@@ -1,21 +1,21 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
-title,Title,,,DCTERMS.title,headline
-#creator,Creator,,,DCTERMS.creator,creator
-date,Date Created,,,DCTERMS.date,dateCreated
-description,Description,,,DCTERMS.description,description
-subject,Subjects,true,,DCTERMS.subject,keywords
-location,Location,,,DCTERMS.coverage,contentLocation
-latitude,Latitude,,,,
-longitude,Longitude,,,,
+title,Título,,,DCTERMS.title,headline
+#creator,Creador,,,DCTERMS.creator,creator
+date,Fecha de creación,,,DCTERMS.date,dateCreated
+description,Descripción,,,DCTERMS.description,description
+subject,Temas,true,,DCTERMS.subject,keywords
+location,Lugar,,,DCTERMS.coverage,contentLocation
+latitude,Latitud,,,,
+longitude,Longitud,,,,
 proceso,Proceso,,,,
 tipologia,Tipología,,,,
 soporte,Soporte,,,,
 polaridad,Polaridad,,,,
 tono,Tono,,,,
 iluminacion,Iluminación,,,,
-#source,Source,,,,
-#identifier,Source Identifier,,,,
-#type,Type,,,DCTERMS.type,
-#format,Format,,,,encodingFormat
-#language,Language,,,DCTERMS.language,
+#source,Fuente,,,,
+#identifier,Identificador de fuente,,,,
+#type,Tipo,,,DCTERMS.type,
+#format,Formato,,,,encodingFormat
+#language,Idioma,,,DCTERMS.language,
 #rightsstatement,,,,DCTERMS.rights,license

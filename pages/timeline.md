@@ -1,7 +1,7 @@
 ---
-title: Timeline
+title: Cronología
 layout: timeline
 permalink: /timeline.html
 ---
 
-## Collection Timeline
+## Cronología de la colección

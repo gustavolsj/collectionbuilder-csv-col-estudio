@@ -1,9 +1,9 @@
 field,display_name,btn,hidden,sort_name,facet_name
-date,Date,,,Date Created
+date,Fecha,,,Fecha de creación
 description,,,true,
 subject,,true
-location,,true,,,Location Depicted
-identifier,,,true,Identifier
+location,,true,,,Lugar representado
+identifier,,,true,Identificador
 proceso,Proceso,,,,Proceso
 tipologia,Tipología,,,,Tipología
 soporte,Soporte,,,,Soporte
