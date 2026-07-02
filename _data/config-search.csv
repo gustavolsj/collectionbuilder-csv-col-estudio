@@ -5,3 +5,10 @@ creator,true,false
 description,true,true
 subject,true,true
 location,true,false
+proceso,true,false
+tipologia,true,false
+soporte,true,false
+polaridad,true,false
+tono,true,false
+iluminacion,true,false
+
