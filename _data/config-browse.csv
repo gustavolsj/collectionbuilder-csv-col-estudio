@@ -4,3 +4,9 @@ description,,,true,
 subject,,true
 location,,true,,,Location Depicted
 identifier,,,true,Identifier
+proceso,Proceso,,,,Proceso
+tipologia,Tipología,,,,Tipología
+soporte,Soporte,,,,Soporte
+polaridad,Polaridad,,,,Polaridad
+tono,Tono,,,,Tono
+iluminacion,Iluminación,,,,Iluminación
