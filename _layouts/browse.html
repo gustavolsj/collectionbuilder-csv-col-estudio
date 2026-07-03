@@ -245,6 +245,38 @@ custom-foot: js/browse-js.html
           </div>
         </div>
       </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+          >
+            Soporte Fotográfico
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionBrowse"
+        >
+          <div class="accordion-body">
+            {% assign mapped_soportes = site.data[site.metadata] | map:
+            "soporte" | compact | uniq %} {% for soporte in mapped_soportes %}
+            <a
+              href="#soporte:{{soporte}}"
+              class="btn btn-outline-dark btn-sm m-1"
+              >{{soporte}}</a
+            >
+            {% endfor %}
+          </div>
+        </div>
+      </div>
       <!-- 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
